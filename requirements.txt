@@ -1,0 +1,8 @@
+torch
+transformers>=4.40.0
+accelerate
+matplotlib
+numpy>=1.22
+tqdm
+scikit-learn
+unicodedata2
