@@ -2,6 +2,8 @@
 
 > A tiny LLM interpretability tool. Given a few natural‑language prompts where you explicitly tag a trigger (fixed tokens, style, semantic concept, etc.), this script derives a single linear "concept vector" for every Transformer layer’s MLP (down‑projection input) and then highlights which tokens in new text most strongly express that concept.
 
+This tool is used as a demo in: https://synacktiv.com/en/publications/llm-poisoning-13-reading-the-transformers-thoughts
+
 ## What it does
 1. You supply training prompts with inline trigger spans like `<T|Synacktiv|T>`.
 2. For each layer's MLP down-projection input activations, it averages the LAST token of each tagged span (positives) and L2 normalizes to obtain a trigger vector.
